@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Personaliza tus productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Personaliza tus chapas, llaveros e imanes</h1>
+        <img src="jpg.jpg" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products"> Productos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Bienvenido a tu tienda personalizada</h2>
+        <p>Elige y personaliza tus productos con facilidad:Chapas,llavero e imanes, abrebotellas puedes ponerle lo que quieras</p>
+        <p>Tamaños de 25mm,32mm,58mm</p>
+  </section>
+  <section id="products">
+    <h2>Elige tu producto para personalizar</h2>
+    <div class="product" id="badge">
+        <img src="jpg1.jpg" alt="`Chapa">
+        <img src="jpg2.jpg" alt="Chapa">
+        <img src="jpg3.jpg" alt="Chapa">
+        <img src="jpg5.jpg" alt="Chapa">
+        <img src="jpg6.jpg" alt="cChapa">
+        <h3>Chapas personalizada</h3>
+        <p>Crea tu chapa con texto personalizado y en color , fotos etc...</p>
+        <button onclick="customize('badge')">Personalizar</button>
+        <div>
+            <div class="product" id="keychain">
+                <img src="jpga1.jpg" alt="Llavero">
+                <img src="jpga2.jpg" alt="Llavero">
+                <img src="jpga3.jpg" alt="Llavero">
+                <img src="jpga4.jpg" alt="Llavero">
+                <img src="jpga5.jpg" alt="Llavero">
+                <img src="jpga6.jpg" alt="Llavero">
+                <h3>LLaveros Personalizados</h3>
+                <p>Elige el color y agrega tu propio mensaje o foto</p>
+                <button onclick="customize('badge')">Personalizar</button>
+                <div>
+                    <div class="product" id="keychain">
+                        <img src="jp2.jpg" alt="Imanes">
+                        <img src="jp3.jpg" alt="Imanes">
+                        <img src="jp4.jpg" alt="Imanes">
+                        <h3>Imán Personalizado</h3>
+                        <p>Personaliza tu iman con el texto que quieras o agregale alguna foto</p>
+                        <button onclick="customize('magnet')">Personalizar</button>
+
+                    </div>
+
+  </section>
+  <section id="customizer">
+    <h2>Personaliza tu producto</h2>
+    <div class="customizer-content">
+        <p><strong>Producto seleccionado</strong> <span id="product-name">Ninguno</span></p>
+        <label for="custom-text">Texto:</label>
+        <input type="text" id="custom-text" placeholder="Ingresa tu texto">
+
+        <label for="color-picker">Elige color</label>
+        <input type="color" id="color-picker">
+
+        <button onclick="applyCustomization()">Aplicar Personalización</button>
+
+    </div>
+    <div class="preview">
+        <h3>Vista previa</h3>
+        <div id="preview-box">
+            <p id="preview-text">Texto personalizado</p>
+        </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 Personalización. Todos los derechos reservados.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
